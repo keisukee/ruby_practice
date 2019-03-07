@@ -3,17 +3,15 @@ class BonusDrink
     if n < 3 && n > 0
       n
     elsif n >= 3
-      i = 0
-      i += n
+      total = 0
+      total += n
       while n >= 3
         n -= 2
-        i += 1
+        total += 1
       end
-      i
+      total
     else
       return "自然数を入力してください"
     end
   end
 end
-
-BonusDrink.total_drink(100)
